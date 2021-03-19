@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" cvd="1"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="renderer" content="webkit">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/layer.css">
+    <link rel="stylesheet" href="css/menustyle.css">
+    <link rel="stylesheet" href="css/MonitoringCard.css">
+    <script src="JS/jquery-3.4.1.min.js"></script>
+    <script src="JS/layer.js"></script><link rel="stylesheet" href="http://www925791.web3v.vip/menu/JS/theme/default/layer.css?v=3.1.1" id="layuicss-layer">
+    <script src="JS/menu.js"></script>
+    <script src="JS/validation.js"></script>
+    <title>闽南师范大学-疫情防控管理平台</title>
+    <script type="text/javascript">
+        $(function () {
+            var isPageHide = false;
+            window.addEventListener('pageshow', function () {
+                if (isPageHide) {
+                    window.location.reload();
+                }
+            });
+            window.addEventListener('pagehide', function () {
+                isPageHide = true;
+            });
+        });
+    </script>
+<style id="cvd_style" type="text/css">
+html[cvd="0"] {
+  -webkit-filter: url('http://www925791.web3v.vip/menu/index.html#cvd_extension_0');
+}
+html[cvd="1"] {
+  -webkit-filter: url('http://www925791.web3v.vip/menu/index.html#cvd_extension_1');
+}
+</style></head>
+
+<body class="vsc-initialized">
+    <div class="logo">
+        <img src="img/logo.png">
+    </div>
+    <div class="container">
+        <div class="pad">
+            <div class="infos">
+                <p class="title">进出场地监控卡</p>
+                <p class="info">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：李嘉敏</p>
+                <p class="info">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：1811190416</p>
+                <p class="info">所属学院：计算机学院</p>
+
+                <p class="info">场地名称：校门</p>
+                <p class="info">进出类型：进</p>
+                <p class="info" id="tim">扫描时间：2021-03-19 14:01</p>
+            </div>
+            <div class="codebox">
+                <div class="codeimg">
+                    <img src="img/GetQRCode.png">
+                </div>
+                <div class="lb"></div>
+                <div class="rb"></div>
+            </div>
+        </div>
+    </div>
+    <div id="cd-nav" class="is-fixed">
+        <a href="javascript:void(0)" class="cd-nav-trigger"><span></span></a>
+        <nav id="cd-main-nav">
+            <ul>
+                <li>
+                    <a href="http://dxg.mnnu.edu.cn/SPCP/Web/Account/ChooseSys">
+                        <img src="img/icon1.png"> 返回首页
+                    </a>
+                </li>
+                <li>
+                    <a href="http://dxg.mnnu.edu.cn/SPCP/Web/Account/Logout">
+                        <img src="img/icon3.png"> 安全退出
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+<script>
+    var dtCur = new Date();
+    var yearCur = dtCur.getFullYear();
+    var monCur = dtCur.getMonth() + 1;
+    var dayCur = dtCur.getDate();
+    var hCur = dtCur.getHours();
+    var mCur = dtCur.getMinutes();
+    var sCur = dtCur.getSeconds();
+    var timeCur = yearCur + "-" + (monCur < 10 ? "0" + monCur : monCur) + "-"
+        + (dayCur < 10 ? "0" + dayCur : dayCur) + " " + (hCur < 10 ? "0" + hCur : hCur)
+        + ":" + (mCur < 10 ? "0" + mCur : mCur);
+    var timeCur_half = yearCur + "-" + (monCur < 10 ? "0" + monCur : monCur) + "-"
+        + (dayCur < 10 ? "0" + dayCur : dayCur);
+
+    document.getElementById('tim').innerText = '扫描时间：' + timeCur
+</script>
+<!--第二版--><span id="cvd_extension_svg_filter" hidden="">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter x="0" y="0" width="99999" height="99999" id="cvd_extension_0">
+      <feColorMatrix id="cvd_matrix_0" type="matrix" values="
+          1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></feColorMatrix>
+    </filter>
+    <filter x="0" y="0" width="99999" height="99999" id="cvd_extension_1">
+      <feColorMatrix id="cvd_matrix_1" type="matrix" values="1 0 0 0 0 0.012599999999999945 0.9835 0.0037999999999999996 0 0 0.007879999999999998 -0.01022 1.0024 0 0 0 0 0 1 0"></feColorMatrix>
+    </filter>
+  </defs>
+</svg>
+</span></body><div style="all: initial;"><div id="__hcfy__" style="all: initial;"></div></div></html>
